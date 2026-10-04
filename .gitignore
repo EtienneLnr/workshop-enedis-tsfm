@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Checkpoints des modèles (~1 Go) : distribués à part
+checkpoints/*
+!checkpoints/.gitkeep
+*.zip

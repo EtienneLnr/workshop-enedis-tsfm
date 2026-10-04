@@ -1,0 +1,30 @@
+[project]
+name = "workshop-tsfm"
+version = "0.1.0"
+description = "Workshop : introduction aux Time Series Foundation Models (imputation & forecasting)"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    # torch : tsicl impose <2.10, tirex-2 impose >=2.8
+    "torch>=2.8,<2.10",
+
+    # Foundation models
+    "tsicl>=0.2.1",                 # TS-ICL (imputation)
+    "chronos-forecasting>=2.2",     # Chronos-2 (forecasting)
+    "tirex-2>=0.3.0",               # TiRex-2 (forecasting)
+
+    # Stack data / baselines
+    "numpy>=2.1",
+    "pandas>=2.2",
+    "scikit-learn>=1.8",
+    "matplotlib>=3.9",
+    "seaborn>=0.13",
+
+    # Notebooks
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+    "ipywidgets>=8.1",
+]
+
+[tool.uv]
+package = false
