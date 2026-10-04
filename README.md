@@ -2,7 +2,7 @@
 
 ```
 workshop_enedis_tsfm/
-├── checkpoints/          # checkpoints des modèles (non versionnés)
+├── checkpoints/          # checkpoints des modèles (non présents sur le git)
 ├── data/
 │   ├── eol_hdf_2021.pt
 │   └── vic_electricity.csv
